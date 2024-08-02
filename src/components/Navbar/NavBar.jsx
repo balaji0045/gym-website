@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import '../Navbar/NavBar.css';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -6,14 +6,30 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar,setNavbar]=useState(false);
+  useEffect(()=>{
+
+    const changeNavBarColor =()=>{
+      if (window.scrollY >= 70) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+
+    };
+    window.addEventListener('scroll', changeNavBarColor);
+    return () => {
+      window.removeEventListener('scroll', changeNavBarColor);
+    };
+    },[])
 
   return (
-    <div className="navigation-container">
+    <div className={`navigation-container  ${navbar ?'navbarglass':''}`}>
       <div className="logo-container">
         <h3 id='logo'>Gym Website</h3>
       </div>
       
-      <div className={`nav-list ${isOpen ? 'mobile-view' : ''}`}>
+      <div className={`nav-list ${isOpen ? 'mobile-view' : ''} `}>
         <nav>
           <ul>
             <li><ScrollLink to='home' smooth={true} duration={500} offset={-70} onClick={() => setIsOpen(!isOpen)}>Home</ScrollLink></li>
