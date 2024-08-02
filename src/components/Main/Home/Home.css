@@ -24,6 +24,7 @@
   height: 100%;
   margin-top: 150px;
   color: white;
+  margin-left: 50px;
 }
 
 .content-area #content-span {
@@ -57,6 +58,7 @@
     height: 700px;
     width: 100%;
     text-align: center;
+    margin-left: 0;
   }
   .content-area h2{
     margin-top: 20px;
