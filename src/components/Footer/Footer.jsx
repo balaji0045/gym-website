@@ -9,19 +9,23 @@ const Footer = () => {
      <div className="header">
      <h3>My Gym </h3>
      <div className="logo">
-  <div className="icon"><InstagramIcon sx={{
-    fontSize:'42px'
-  }}/></div>
-  <div className="icon"><GitHubIcon sx={{
-    fontSize:'42px'
-  }} /></div>
+  <div className="icon"><a href="https://www.instagram.com/panther_kidd/"><InstagramIcon sx={{
+    fontSize:'42px',
+    color:'white'
+    
+    
+  }}/></a></div>
+  <div className="icon"><a href="https://github.com/balaji0045"><GitHubIcon sx={{
+    fontSize:'42px',
+    color:'white'
+  }} /></a></div>
   <div className="icon"><TwitterIcon sx={{
     fontSize:'42px'
   }} /></div>
      </div>
      </div>
      <div className="content">
-      <p>&copy; 2024 Gym Website @Balaji0045. All Rights Reserved.</p>
+      <p>&copy; 2024 Gym Website @Balajidk100@gmail.com. All Rights Reserved.</p>
      </div>
     </div>
   )

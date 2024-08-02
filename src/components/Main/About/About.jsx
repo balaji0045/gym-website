@@ -9,11 +9,14 @@ import { CardActionArea } from '@mui/material';
 import FreeConsultation from '../../../assets/about-page1.jpg'
 import BestTraining from '../../../assets/abut-page2.jpg'
 import BuildPerfectBody from '../../../assets/about-page3.jpg'
+
 const About = () => {
   return (
     <div className='about'>
       <div className="about-container">
-      <div className="sub-card">
+      <div className="sub-card" 
+      
+      >
 
       <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -40,7 +43,8 @@ const About = () => {
     </Card>
       </div>
 {/*  */}
-<div className="sub-card">
+<div className="sub-card"
+ >
 
       <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -66,7 +70,8 @@ const About = () => {
     </Card>
       </div>
 
-<div className="sub-card">
+<div className="sub-card" 
+ >
 
       <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
