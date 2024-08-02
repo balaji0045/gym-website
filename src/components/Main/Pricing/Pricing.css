@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pricing{
+  min-height: 100vh;
+  background-color: #0f1214;
+  
+}
+header {
+  text-align: center;
+  color: whitesmoke;
+}
+header h3{
+  font-size: 30px;
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+header p{
+  text-transform: capitalize;
+  font-size: 16px;
+  text-wrap: wrap;
+
+  color: whitesmoke;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.cards .price-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px;
+  flex-grow: 1;
+}
+.cards .price-card .heading{
+  font-size: 32px;
+}
